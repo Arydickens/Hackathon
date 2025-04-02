@@ -1,0 +1,293 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg1.jpg);opacity: 0.9;
+    background-size: calc(100% + 10px) calc(100% + 10px);
+    background-position: center;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-color: #2e322f;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #41367f;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    border: #2e322f double 2px;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('') no-repeat center center/cover;
+    min-height: 80vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.hero-content h1 {
+    font-size: 6vw;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 3vw;
+    margin: 10px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #2e322f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 40px 5%;
+    text-align: center;
+    background-color: white;
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px 5%;
+    text-align: left;
+    background-color: white;
+}
+
+/* Blog Section */
+.blog,
+.blog-post {
+    padding: 5px 5%;
+    text-align: left;
+    background-color: white;
+}
+
+/* Featured Projects */
+.featured-projects {
+    padding: 40px 5%;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #41367f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav li {
+    margin: 5px 10px;
+}
+
+.footer-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+/* Button */
+button {
+    background-color: #405974;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 5vw;
+    }
+
+    .hero-content p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 6vw;
+    }
+
+    .hero-content p {
+        font-size: 3vw;
+    }
+
+    .cta-button {
+        width: 50%;
+        padding: 15px;
+        margin: 10px auto;
+        font-size: 3vw;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
